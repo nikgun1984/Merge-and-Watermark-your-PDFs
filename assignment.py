@@ -21,7 +21,7 @@ with open('super.pdf','rb') as file:
         with open('output.pdf','wb') as output_file:
             pdf_writer.write(output_file)
 
-#Or this way
+#Or this way --> more elegant way :)
 
 template = PyPDF2.PdfFileReader(open('super.pdf','rb'))
 watermark2 = PyPDF2.PdfFileReader(open('wtr.pdf','rb'))
